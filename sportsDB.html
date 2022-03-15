@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sports DB</title>
+    <link rel="stylesheet" href="sports.css">
+
+    <!-- bootrtrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <h1 class="text-center mb-3">Welcome To Sports World</h1>
+    <div class="container">
+        <div class="row  mx-auto gx-3">
+            <div class="col-md-6   mx-auto text-center bg-info text-dark bg-opacity-25 border border-primary">
+                <div>
+
+                    <h2>left-side</h2>
+                    <!-- player serach input -->
+                    <div class="input-group mb-3 w-50 mx-auto">
+                        <input id="input-player" type="text" class="form-control " placeholder="Recipient's username"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button onclick="searchPlayer()" class="btn btn-outline-secondary" type="button">Button</button>
+                    </div>
+
+
+                    <div id="search-result" class="card mx-auto mb-3" style="width: 18rem;">
+                        <!-- <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <div>
+                            <button>Delete</button>
+                            <button>Details</button>
+                        </div>
+                    </div>
+                     -->
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="col-md-6   mx-auto text-center bg-success text-dark bg-opacity-25 border border-primary">
+                <div>
+
+                    <h2>right-side</h2>
+                    <div id="detail-container" class="detail-container">
+                        <!-- <div>
+                        <img src="" alt="">
+                        <h4>Name:</h4>
+                        <h4>Gender:</h4>
+                    </div> -->
+
+                    </div>
+                    <div class="image-container ">
+                        <img id="male" class="image1  w-25 mb-2" src="images/male.jpg" alt="">
+                        <img id="female" class="image2  w-25" src="images/female.jpg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="js/sportsDB.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
